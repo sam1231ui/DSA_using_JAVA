@@ -6,15 +6,15 @@ public class LinkListDemo {
 	
 	public static void main(String[] args) {
 		
-//		// INT LIST DEMO \\
-//		IntList l = new IntList();
-//		
-//		for(int i=0; i<5; i++) {
-//			l.add(new IntNode(i+1));
-//		}
-//		
-//		// display of Int list 
-//		l.display();
+		// INT LIST DEMO \\
+		IntList l = new IntList();
+		
+		for(int i=0; i<5; i++) {
+			l.add(new IntNode(i+1));
+		}
+		
+		// display of Int list 
+		l.display();
 		
 		
 		
@@ -41,45 +41,33 @@ public class LinkListDemo {
 		
 		
 		
+		// BOOK  LIST DEMO \\
+		// link list of book object 
+		BookList l1 = new BookList();
+		Scanner sc = new Scanner(System.in);
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-//		// BOOK  LIST DEMO \\
-//		// link list of book object 
-//		BookList l1 = new BookList();
-//		Scanner sc = new Scanner(System.in);
-//		
-//		while(true) {
-//			
-//			// user input for book instances
-//			System.out.println("Enter book Id ,name and price to add book or 1 to exit");
-//			
-//			if(sc.nextInt() == -1)
-//				break;
-//			
-//			int id = sc.nextInt();
-//			String name = sc.next();
-//			double price = sc.nextDouble();
-//			
-//			// indirect book object for better understanding
-//			//BookL b = new BookL(id,name,price);
-//			
-//			// direct creation of link node of type book
-//			Node n1 = new Node(new BookL(id,name,price));
-//			
-//			l1.add(n1);
-//		}
-//		sc.close();
-//		l1.display();
+		while(true) {
+			
+			// user input for book instances
+			System.out.println("Enter book Id ,name and price to add book or 1 to exit");
+			
+			if(sc.nextInt() == -1)
+				break;
+			
+			int id = sc.nextInt();
+			String name = sc.next();
+			double price = sc.nextDouble();
+			
+			// indirect book object for better understanding
+			//BookL b = new BookL(id,name,price);
+			
+			// direct creation of link node of type book
+			Node n1 = new Node(new BookL(id,name,price));
+			
+			l1.add(n1);
+		}
+		sc.close();
+		l1.display();
 		
 	}
 }
