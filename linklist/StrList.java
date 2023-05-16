@@ -25,6 +25,12 @@ public class StrList {
 		}
 	}
 		
+	// delete at end
+	public void deletebeg() {
+		
+		if(head != null)
+			head = head.next;
+	}
 	
 	// add node at start
 	public void addAtFirst(StrNode s) {
@@ -38,6 +44,23 @@ public class StrList {
 		head = s;
 		
 	}
+	
+	// delete at end
+	public void deleteEnd() {
+		
+		if(head == null)return;
+		
+		StrNode temp = head;
+		
+		while(temp.next.next != null) {
+			temp = temp.next;
+		}
+		temp.next = null;
+		
+	}
+	
+	
+	
 	
 	// add node at end
 	public void addAtend(StrNode s) {
