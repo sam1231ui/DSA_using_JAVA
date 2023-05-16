@@ -1,5 +1,6 @@
 package assign.linklist;
 
+import java.util.*;
 
 
 public class LinkListDemo {
@@ -34,11 +35,15 @@ public class LinkListDemo {
 		s.addAtFirst(new StrNode("Hi"));
 		s.addAtend(new StrNode("done"));
 		s.display();
+		s.deletebeg();
+		s.deleteEnd();
+		s.display();
+		
 		
 		// start and last data in list
 		s.getStart();
 		s.getEnd();
-		
+ 
 		
 		
 		// BOOK  LIST DEMO \\
