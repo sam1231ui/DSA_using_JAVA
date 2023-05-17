@@ -18,8 +18,6 @@ public class LinkListDemo {
 		l.display();
 		
 		
-		
-		
 		// String list Demo \\
 		// String list
 		StrList s = new StrList();
@@ -28,17 +26,27 @@ public class LinkListDemo {
 		StrNode s2 = new StrNode("am");
 		StrNode s3 = new StrNode("sam");
 		StrNode s4 = new StrNode("!!");
+		StrNode s5 = new StrNode("newNode");
 		s.add(s1);
 		s.add(s2);
 		s.add(s3);
 		s.add(s4);
 		s.addAtFirst(new StrNode("Hi"));
 		s.addAtend(new StrNode("done"));
+		
+		s.deletePos(4);
+		s.displayPos(2);
+		
+		s.addPos(5, s5);
 		s.display();
+		
 		s.deletebeg();
 		s.deleteEnd();
 		s.display();
 		
+		//reverse display
+		s.printReverse(s.head);
+		System.out.println();
 		
 		// start and last data in list
 		s.getStart();
